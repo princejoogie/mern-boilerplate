@@ -21,10 +21,6 @@
     "tailwindcss": "^2.2.4",
     "typescript": "4.3.5"
   },
-  "author": {
-    "email": "princejoogie@gmail.com",
-    "name": "Prince Carlo Juguilon",
-    "url": "https://princecaarlo.tech/"
-  },
+  "author": "Prince Carlo Juguilon <47204120+princejoogie@users.noreply.github.com>",
   "license": "MIT"
 }

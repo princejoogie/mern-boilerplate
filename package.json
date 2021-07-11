@@ -1,0 +1,8 @@
+{
+  "name": "mern-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/princejoogie/mern-boilerplate.git",
+  "author": "Prince Carlo Juguilon <47204120+princejoogie@users.noreply.github.com>",
+  "license": "MIT"
+}

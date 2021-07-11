@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": {
+    "email": "princejoogie@gmail.com",
+    "name": "Prince Carlo Juguilon",
+    "url": "https://princecaarlo.tech/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

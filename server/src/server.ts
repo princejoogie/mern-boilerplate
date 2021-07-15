@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import express from "express";
 import { authRouter } from "./routes";
+import colors from "colors";
 dotenv.config();
 
 const PORT = process.env.PORT || 5000;
@@ -15,5 +16,9 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`ready - started server on http://localhost:${PORT}`);
+  console.clear();
+  console.log(
+    colors.green(`ready - started server on`),
+    colors.blue(`http://localhost:${PORT}`)
+  );
 });

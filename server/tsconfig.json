@@ -13,6 +13,6 @@
     "baseUrl": ".",
     "strict": true
   },
-  "include": ["index.d.ts", "**/*.ts"],
+  "include": ["types.d.ts", "**/*.ts"],
   "exclude": ["node_modules"]
 }

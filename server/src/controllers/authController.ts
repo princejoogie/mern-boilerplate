@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { User } from "../models";
+import { IUser } from "../../types";
 
 export const registerController = async (
   req: Request,

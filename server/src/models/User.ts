@@ -1,15 +1,6 @@
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 
-export interface IUser {
-  username: string;
-  email: string;
-  password: string;
-  resetPasswordToken?: string;
-  resetPasswordExpire?: Date;
-  timestamp?: Date;
-}
-
 interface UserDoc extends mongoose.Document {
   username: string;
   email: string;

@@ -1,11 +1,32 @@
 import { Request, Response, NextFunction } from "express";
+import { User, IUser } from "../models";
 
-export const registerController = (
+export const registerController = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  res.send("Register Route");
+  try {
+    const { email, password, username } = req.body as IUser;
+
+    const user = User.build({
+      email,
+      password,
+      username,
+    });
+
+    const data = await user.save();
+
+    res.status(201).json({
+      success: true,
+      user: data,
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      error: err.message,
+    });
+  }
 };
 
 export const loginController = (
